@@ -19,8 +19,8 @@ function initAudio(element){
 		$('#duration').html('0.00');
 	}
 	
-	$('#audio-player.title').text(title);
-	$('#audio-player.artist').text(artist);
+	$('#audio-player .title').text(title);
+	$('#audio-player .artist').text(artist);
 	
 	//Insert Cover Image
 	$('img.cover').attr('src','images/covers/'+cover);
@@ -105,10 +105,10 @@ function showDuration(){
 		if(s<10){
 			s='0'+s;
 		}
-		$('#duration').html(m +'.'+ s);
-		var value = 0;
-		if(audio.currentTime > 0){
-			value= Math.floor((100 / audio.duration)*audio.currentTime);
+		$('#duration').html(m+'.'+s);
+		var value=0;
+		if(audio.currentTime>0){
+			value=Math.floor((100/audio.duration)*audio.currentTime);
 		}
 		$('#progress').css('width',value+'%');
 	});

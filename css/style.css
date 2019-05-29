@@ -104,7 +104,7 @@ button#stop{
 #playlist li.active {
 	font-weight:bold;
 	padding: 3px;
-	background: #D8FF00;
+	background: #F0F;
 }
 
 #progressBar { 
