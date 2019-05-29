@@ -82,7 +82,7 @@ $('#prev').click(function (){
 //Playlist Song Click
 $('#playlist li').click(function(){
 	audio.pause();
-	initAudio($('this'));
+	initAudio($(this));
 	$('#play').hide();
 	$('#pause').show();
 	$('#duration').fadeIn(400);
@@ -104,6 +104,11 @@ function showDuration(){
 		//Add 0 if seconds less than 10
 		if(s<10){
 			s='0'+s;
+		}
+		$('#duration').html(m +'.'+ s);
+		var value = 0;
+		if(audio.currentTime > 0){
+			value= Math.floor((100 / audio.duration)*audio.currentTime);
 		}
 		$('#progress').css('width',value+'%');
 	});
