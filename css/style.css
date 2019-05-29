@@ -20,13 +20,13 @@ body{
 #container{
 	width: 330px;
 	min-height: 400px;
-	background: #F00;
+	background: #F3F;
 	overflow: auto;
 	margin: 60px auto;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border:#666 solid 2px;
+	border: #666 solid 2px;
 }
 
 #audio-imagen{
